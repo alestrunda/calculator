@@ -48,7 +48,6 @@ const calculatorMachine = createMachine(
         on: {
           C: {
             actions: ["onClear"],
-            target: "firstOperand",
           },
           INPUT: {
             actions: ["onInputFirstOperand"],
