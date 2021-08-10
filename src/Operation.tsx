@@ -10,7 +10,11 @@ const Operation = ({ onClick, type }: Props) => {
     onClick(type);
   };
 
-  return <button onClick={handleClick}>{type}</button>;
+  return (
+    <button className="blue" onClick={handleClick}>
+      {type}
+    </button>
+  );
 };
 
 export default Operation;

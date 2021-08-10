@@ -154,7 +154,6 @@ function App() {
         }
       );
       calculatorService.current.start();
-      console.log(calculatorService);
     }
 
     initCalculator();
@@ -204,9 +203,13 @@ function App() {
           onClick={handleOperatorClick}
           type={OperationType.MULTIPLY}
         />
-        <button onClick={handleReset}>C</button>
+        <button className="red" onClick={handleReset}>
+          C
+        </button>
         <Number onClick={handleNumberClick} value={0} />
-        <button onClick={handleSubmit}>=</button>
+        <button className="green" onClick={handleSubmit}>
+          =
+        </button>
         <Operation onClick={handleOperatorClick} type={OperationType.DIVIDE} />
       </div>
     </div>
