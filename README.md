@@ -1,6 +1,6 @@
 # Calculator
 
-Simple calculator app using [xstate](https://www.npmjs.com/package/xstate) library (using finite state machines).
+Simple calculator app to try out [xstate](https://www.npmjs.com/package/xstate) library for state management (using finite state machines).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
