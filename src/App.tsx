@@ -140,10 +140,11 @@ const calculatorMachine = createMachine(
 );
 
 function App() {
+  //TODO: types
   const [currentState, setCurrentState] = useState<any>({
     context: defaultMachineContext,
   });
-  const calculatorService = useRef<any>({});
+  const calculatorService = useRef<any>({}); //TODO: types
 
   useEffect(() => {
     function initCalculator() {
